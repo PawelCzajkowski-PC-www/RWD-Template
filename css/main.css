@@ -1,0 +1,457 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*CSS dla rozdzielczość od 281px do 499px (mobile styles)*/
+
+/* Ogólny wygląd strony - początek */
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    
+}
+#kontener {
+    width: auto;
+    margin: 0 auto;
+    background-color:lightgreen;
+}
+/* Ogólny wygląd strony - koniec */
+
+/*Górna część strony - początek*/
+header {
+    margin: 0px;
+    padding: 3px;
+    border: 3px solid #721213;
+    background-color: #413a3a;
+    height: 55px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header div a {
+    color: red;
+    text-decoration: none;
+}
+header div:nth-child(1) {
+    flex: 1 0 auto;
+    text-align: left;
+}
+header div:nth-child(2) {
+    flex: 1 0 auto;
+    text-align: center;
+    padding-left: 10px;
+}
+header div:nth-child(3) {
+    flex: 1 0 auto;
+    text-align: right;
+    padding-right: 5px;
+}
+#baner_gorny_logo {
+    width: auto;
+    height: 57px;
+}
+#baner_gorny_telefon {
+    width: auto;
+    height: 53px;
+}
+#baner_gorny_email {
+    width: auto;
+    height: 50px;
+}
+/*Górna część strony - koniec*/
+
+/*Panel nawigacyjny - początek*/
+nav {
+    width: auto;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+nav div {
+    width: 200px; /*szerokość określiłem dla potrzeb testu*/
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    color: blue;
+    border: 2px solid black;
+}
+nav div:nth-child(1) {
+    background-color: yellow; 
+    flex: 1 0 auto;
+}
+nav div:nth-child(2) {
+    background-color: red; 
+    flex: 1 0 auto;
+}
+nav div:nth-child(3) {
+    background-color: blueviolet;
+    flex: 1 0 auto;
+}
+/*Panel nawigacyjny - koniec*/
+
+/*Główna część strony - początek*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#pierwsza {
+    width: 200px;
+    margin: 5px;
+    padding: 30px 10px;
+    text-align: center;
+    background-color: yellow;
+    flex: 1 0 auto;
+}
+#druga {
+    width: 100px;
+    margin: 5px;
+    padding: 30px 10px;
+    text-align: center;
+    background-color: red;
+    flex: 1 0 auto;
+}
+#trzecia {
+    width: 100px;
+    margin: 5px;
+    padding: 30px 10px;
+    text-align: center;
+    background-color: coral;
+    flex: 1 0 auto;
+}
+#czwarta {
+    width: 200px;
+    margin: 5px;
+    padding: 80px 10px;
+    text-align: center;
+    background-color:#b3d4fc;
+    flex: 1 0 auto;
+}
+/*Główna część strony - koniec*/
+
+/* Dolna część strony - początek */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    margin: 0px;
+}
+#dolna_czesc_strony {
+    
+    background-color: #413a3a;
+    border: solid 3px #721213;
+}
+
+#prawa_autorskie {
+    color: red;
+    font-size: 10px;
+}
+/* Dolna część strony - koniec */
+
+/*Media Queries*/
+
+/*CSS dla rozdzielczość do 499px (mobile styles) została ustalona powyżej*/
+
+/*Tablet styles*/
+@media only screen and (min-width: 500px) {
+    header {
+        height: 80px;
+    }
+     header div:nth-child(3) {
+        font-size:100%;
+        font-weight: normal;
+    }
+    #baner_gorny_logo {
+        height: 80px;
+    }
+    #baner_gorny_telefon {
+        height: 75px;
+    }
+    #baner_gorny_email {
+        height: 65px;
+        padding-right: 10px;
+    }
+}
+
+/*Laptop styles*/
+@media only screen and (min-width: 1280px) {
+    
+    #prawa_autorskie {
+        font-size: 12px;
+    }
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
